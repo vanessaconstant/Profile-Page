@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+
+        <h1 class="primary-heading">Profile</h1>
+        <ul class="nav-links">
+            <li class="nav-lists">Home</li>
+            <li class="nav-lists">My Profile</li>
+            <li class="nav-lists">Find Connections</li>
+        </ul>
+
+
+        <a href="#" class="sign-btn">Sign out</a>
+
+
+    </div>
+
+    <div class="container">
+
+        <div class="main">
+            <div class="profile-card">
+                <div class="profile-bar"></div>
+                <div class="profile-circle">
+                    <img src="/images/jane-m.jpg" alt="Jane Profile Picture" class="profile-img">
+                </div>
+                <div class="profile-car-info">
+                    <h2 class="profile-name">Jane Doe</h2>
+                    <img src="/icons/map-marker.png" alt="map-marker" class="map-marker">
+                    <p class="profile-location">Seattle</p>
+                    <p class="profile-descrip">Developer | Engineer | Problem Solver <br>
+                        Master of Shadows and the internet</p>
+                    <img src="/icons/gear.png" alt="Setting icon" class="setting-gear">
+                    <a href="#" class="setting-link" onclick="editProfile('.profile-name')">edit profile</a>
+                </div>
+            </div>
+
+            <div class="education">
+                <div class="section-bar">Education</div>
+                <div class="education-info">
+                    <h3 class="tertiary-heading">Coding Dojo - Full Stack Bootcamp</h3>
+                    <p class="date">Dec 2019 - March 2020</p>
+                    <p class="description-education">Triple black belt in Python, MERN, and C#...</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="sidebar">
+            <div class="connect-req">
+                <div class="section-bar"><span id="request-count">2</span>
+                    <h4 class="heading-four">Connection Request</h4>
+                </div>
+                <div class="connect-req-row request1">
+                    <img src="/images/todd-s.jpg" alt="Profile image of Todd" class="connect-img">
+                    <p class="names1">Todd E</p>
+                    <div class="icon-block">
+                        <img src="/icons/accept-circle.png" alt="check mark" class="icons"
+                            onclick="remove('.request1', '#request-count', '#connections')">
+                        <img src="/icons/close-circle.png" alt="closed mark" class="icons"
+                            onclick="remove('.request1', '#request-count')">
+                    </div>
+
+                </div>
+                <div class="connect-req-row request2">
+                    <img src="/images/phil-s.jpg" alt="Profile image of Todd" class="connect-img">
+                    <p class="names">Phil K </p>
+                    <div class="icon-block">
+                        <img src="/icons/accept-circle.png" alt="check mark" class="icons"
+                            onclick="remove('.request2', '#request-count', '#connections')">
+                        <img src="/icons/close-circle.png" alt="closed mark" class="icons"
+                            onclick="remove('.request2', '#request-count')">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="your-connections">
+
+                <div class="section-bar"><span id="connections">500</span>
+                    <h4 class="heading-four">Your Connections</h4>
+                </div>
+                <div class="your-connect-names">
+                    <div class="your-connect-rows">
+                        <img src="/images/adrien-s.jpg" alt="Profile image of Todd" class="connect-img">
+                        <p class="connect-names">Adrien D</p>
+                    </div>
+                    <div class="your-connect-rows">
+                        <img src="/images/anne-s.jpg" alt="Profile image of Todd" class="connect-img">
+                        <p class="connect-names">Anne J</p>
+                    </div>
+                    <div class="your-connect-rows">
+                        <img src="/images/alayne-s.jpg" alt="Profile image of Todd" class="connect-img">
+                        <p class="connect-names">Alayne T</p>
+                    </div>
+                    <div class="your-connect-rows">
+                        <img src="/images/arry-s.jpg" alt="Profile image of Todd" class="connect-img">
+                        <p class="connect-names">Arry Y</p>
+                    </div>
+                </div>
+                <div class="more-section">
+                    <a href="#" class="more-link">View More</a>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
